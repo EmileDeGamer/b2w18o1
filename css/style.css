@@ -1,0 +1,171 @@
+body {
+  margin: auto;
+  text-align: left;
+  font-family: 'Archivo', sans-serif;
+}
+
+#wrapper {
+  border: 1px solid lightgray;
+  margin: 25px;
+  max-width: 100%;
+}
+
+#menu {
+  position: -webkit-sticky;
+  position: sticky;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[1];
+      grid-template-rows: repeat(1, auto);
+  -ms-grid-columns: (auto)[6];
+      grid-template-columns: repeat(6, auto);
+  top: 0;
+  background: yellow;
+  padding: 25px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.item {
+  margin: 0px 10px;
+}
+
+#screen {
+  opacity: 0;
+  -ms-grid-column: 6;
+  grid-column: 6;
+  margin: auto;
+}
+
+#logo {
+  height: 5em;
+  -ms-grid-column: 5;
+  grid-column: 5;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+#head {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[5];
+      grid-template-columns: repeat(5, auto);
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+}
+
+#headLogo {
+  width: 100%;
+  grid-column: span 5;
+}
+
+.title {
+  color: gray;
+  border-bottom: solid 1px lightgray;
+  padding: 20px;
+}
+
+#proefles, #locaties, #rijlessen {
+  margin: 25px;
+}
+
+.headButton {
+  opacity: 0;
+  margin: 10px;
+}
+
+#headButtons {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/span 4;
+  margin: auto;
+}
+
+@media only screen and (min-width: 720px) {
+  #wrapper {
+    margin: auto;
+    border: none;
+  }
+  #logo {
+    margin-left: 75px;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .menuButton {
+    opacity: 0;
+    position: absolute;
+  }
+  #screen {
+    opacity: 1;
+  }
+  #menu {
+    padding: 10px;
+  }
+  #itemWrapper {
+    display: -ms-grid;
+    display: grid;
+    margin: 0px 20px;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .title {
+    border: none;
+  }
+  .headButton {
+    text-decoration: none;
+    opacity: 1;
+    color: gray;
+  }
+}
+
+.titleLogo {
+  margin-right: 10px;
+}
+
+#button {
+  padding: 15px;
+  background: yellow;
+  display: inline-block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+#here {
+  color: blue;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  z-index: 1;
+  margin: auto;
+  padding: 10px;
+  float: left;
+  text-align: center;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
