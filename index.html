@@ -10,7 +10,7 @@
     <body>
         <div id="wrapper">
             <div id="menu">
-                <i class="fas fa-bars fa-2x menuButton" style="color: white;"></i>
+                <i class="fas fa-bars fa-2x menuButton" id="mobileHover" style="color: white;"></i>
                 <div id="screen">
                     <span class="item"><i class="fas fa-phone"></i> (06) --- --- --</span>
                     <span class="item"><i class="fab fa-whatsapp"></i> (06) --- --- --</span>
@@ -20,21 +20,21 @@
                 </div>
             </div>
             <div id="head">
-                <i class="fas fa-bars fa-2x menuButton" style="float: left; padding: 25px"></i>
+                <i class="fas fa-bars fa-2x menuButton" id="mobileHoverOnce" style="float: left; padding: 25px"></i>
                 <img src="./img/logo.png" alt="logo" id="logo">
                 <div id="headButtons">
                     <div class="headButton dropdown">AUTORIJBEWIJS <i class="fas fa-caret-down"></i>
-                        <div class="dropdown-content">
+                        <div id="dropdown-content">
                             <a href="#" class="headButton">THEORIELES</a>
                             <a href="#" class="headButton">OPFRIS CURSUS</a>
                             <a href="#" class="headButton">CONTACT</a>
                         </div>
                     </div>
                     <div class="headButton dropdown">MOTORRIJBEWIJS <i class="fas fa-caret-down"></i>
-                        <div class="dropdown-content">
-                                <a href="#" class="headButton">THEORIELES</a>
-                                <a href="#" class="headButton">OPFRIS CURSUS</a>
-                                <a href="#" class="headButton">CONTACT</a>
+                        <div id="dropdown-content">
+                            <a href="#" class="headButton">THEORIELES</a>
+                            <a href="#" class="headButton">OPFRIS CURSUS</a>
+                            <a href="#" class="headButton">CONTACT</a>
                         </div>
                     </div>
                     <a href="#" class="headButton">THEORIELES</a>
@@ -60,7 +60,9 @@
                     <p class="text">De rijlessen van FLEXI worden op basis van een instructiekaart voorbereid en uitgevoerd. Op de instructiekaart houdt de FLEXI rijinstructeur jouw vorderingen in de gaten. Ook gebruiken de meeste FLEXI rijinstructeurs een dashcam, zodat de les of een deel van de les teruggekeken wordt. Hier halen jij en jouw FLEXI rijinstructeur de pos en nav en bespreekt dit met jou.</p>
                 </div>
             </div>
-            
+            <iframe>
+                src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe> 
             <footer>© Emile Mol 2019</footer>
         </div>
         <script src="js/script.js"></script>
